@@ -1,0 +1,112 @@
+.header{
+    padding: 41px 0 0;
+    margin-bottom: 220px;
+    &__row{
+        display: flex;
+       
+        align-items: center;
+    }
+    &__left{
+        flex-grow: 1;
+    }
+    &__center{
+        margin-right: 51px;
+    }
+    &__burger{
+        display: none!important;
+    }
+}
+
+.menu{
+    max-width: 609px;
+    width: 100%;
+    &__list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:10px 50px;
+    }
+    &__link{
+        display: inline-block;
+        position: relative;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #666666;
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: currentColor;
+            transition: all 300ms;
+        }
+        
+    }
+    &__item{
+        &:hover a::before,&.active a::before{
+            width: 100%;
+        }
+    }
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    &__item{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.burger{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #666666;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+    &__line{
+        width: 100%;
+        height: 2px;
+        background: #666666;
+        position: relative;
+        &::before,&::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            position: absolute; 
+            left: 0;
+            
+        }
+        &::before{
+            top: -7px;
+        }
+       
+        &::after{
+            bottom: -7px;
+        }
+    }
+}

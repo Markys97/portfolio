@@ -1,0 +1,42 @@
+.intro{
+    margin-bottom: 348px;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+    h1{
+        max-width: 651.85px;
+        width: 100%;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 70px;
+        letter-spacing: -1px;
+        color: #42446E;
+        span{
+            display: block;
+        }
+        .name{
+            background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+
+        }
+       
+    }
+    &__img{
+        max-width: 357.7px;
+        width: 100%;
+        height:349px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 50%;
+        img{
+            height: 100%;
+        }
+    }
+}
