@@ -24,3 +24,57 @@
     color: #666666;
     text-align: center;
 }
+
+.main-wrapper{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+body.menuMobileOpen{
+    overflow: hidden!important;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+    .wrapper{
+        max-width: 800px;
+        padding: 0 15px;
+    }
+
+    .title{
+        font-size: 38px;
+        line-height: 41px;
+        margin-bottom: 20px;
+    }
+
+    .subtitle{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width:768px) {
+    .wrapper{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .title{
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    .subtitle{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

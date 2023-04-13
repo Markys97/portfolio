@@ -4,6 +4,7 @@
         display: flex;
         justify-content: space-between;
     }
+    
     h1{
         max-width: 651.85px;
         width: 100%;
@@ -37,6 +38,42 @@
         border-radius: 50%;
         img{
             height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .intro{
+        margin-bottom: 100px;
+        &__row{
+            flex-direction: column-reverse;
+            justify-content: unset;
+            align-items: center;
+            gap: 50px;
+        }
+        h1{
+            font-size: 48px;
+            line-height: 60px;
+            text-align: center;
+        }
+        &__img{
+            height:249px;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .intro{
+        margin-bottom: 40px;
+        &__row{
+            gap: 40px;
+        }
+        h1{
+            font-size: 35px;
+            line-height: 40px;
+            text-align: center;
+        }
+        &__img{
+            height:200px;
         }
     }
 }
