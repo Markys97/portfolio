@@ -540,6 +540,13 @@ body.menuMobileOpen {
   gap: 78px;
   grid-template-columns: repeat(6, 1fr);
 }
+.stack__item {
+  display: flex;
+}
+.stack__item img {
+  height: 100%;
+  max-width: 100%;
+}
 
 @media screen and (max-width: 1200px) {
   .stack {

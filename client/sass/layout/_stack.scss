@@ -6,6 +6,14 @@
         gap: 78px;
         grid-template-columns: repeat(6,1fr);
     }
+    &__item{
+        display: flex;
+      
+        img{
+            height: 100%;
+            max-width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width:1200px){
@@ -32,8 +40,7 @@
             margin: 50px auto 0;
         }
         &__item{
-           
-            // width: 100px;
+          
             img{
                 max-width: 100%;
                 height: auto;
